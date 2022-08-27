@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
       title: 'Dial App Demo',
       theme: ThemeData( 
         primarySwatch: Colors.blue,
-      ),
-      // home: MyHomePage(title: 'USSD Dial'),
-      home: CellNumberPage(),
+      ), 
+      home: CellNumberPage(title: "Save Cell Number"),
     );
   }
 }
