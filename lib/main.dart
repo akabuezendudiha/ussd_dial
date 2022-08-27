@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:ussd_dial/cell_number.dart'; 
+import 'package:ussd_dial/dial_ussd.dart'; 
 import 'package:ussd_dial/locator.dart';
 // import 'package:ussd_dial/home.dart';
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData( 
         primarySwatch: Colors.blue,
       ), 
-      home: CellNumberPage(title: "Settings: Cell Number"),
+      home: DialUssd(),
     );
   }
 }
