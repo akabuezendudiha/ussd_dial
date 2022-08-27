@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData( 
         primarySwatch: Colors.blue,
       ), 
-      home: CellNumberPage(title: "Save Cell Number"),
+      home: CellNumberPage(title: "Settings: Cell Number"),
     );
   }
 }
