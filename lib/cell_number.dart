@@ -3,6 +3,9 @@ import 'package:ussd_dial/main.dart';
 import 'package:ussd_dial/services/shared_pref.dart';
 
 class CellNumberPage extends StatefulWidget {
+  final String title;
+  CellNumberPage({Key key, this.title}) : super(key: key);
+
   @override
   _CellNumberPageState createState() => _CellNumberPageState();
 }
@@ -46,7 +49,7 @@ class _CellNumberPageState extends State<CellNumberPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: Text(widget.title),
       ),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 24),
